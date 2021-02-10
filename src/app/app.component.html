@@ -1,1 +1,2 @@
-<app-person></app-person>
+<app-person *ngFor="let p of people$ | async" [person]="p"></app-person>
+<button (click)="addNew()">New</button>
